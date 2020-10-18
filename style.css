@@ -1,0 +1,31 @@
+/*
+Theme Name: Anteny.snadno
+Author: Jan Bartošík
+*/
+
+body {
+    background: #e7e7e7;
+}
+
+header {
+    background: black;
+    width: 100%;
+    height: 100px;
+}
+
+div.navigation ul {
+    margin: 20px 0px 20px 0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align: right;
+}
+
+div.navigation li {
+    padding: 20px 20px 0px 0px;
+    display: inline;
+}
+
+div.navigation a {
+    color: #FFFFFF;
+}

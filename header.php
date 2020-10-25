@@ -9,9 +9,8 @@
     <header class="sticky-top">
 
         <?php wp_nav_menu(array(
-            'theme-location' => 'top-menu',
+            'theme_location' => 'top-menu',
             'container_class' => 'navigation'
         )); ?>
-
 
     </header>

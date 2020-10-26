@@ -56,6 +56,24 @@ add_action('wp_enqueue_scripts', 'loadjs');
 
 
 
+
+/**
+ * Load Font Awesome
+ *
+ * @return void
+ */
+function font()
+{
+    wp_enqueue_script('font', get_template_directory_uri() . '/js/all.js', '', 1, true);
+    add_action('wp_enqueue_scripts', 'font');
+}
+add_action('wp_enqueue_scripts', 'font');
+
+
+
+
+
+
 /**
  * Enables support for menus
  */

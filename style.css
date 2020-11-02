@@ -18,7 +18,7 @@ header {
 header.scrolled {
     background-color: black !important;
     transition: background-color 200ms linear;
-  }
+}
 
 div.navigation ul {
     float: right;
@@ -44,16 +44,42 @@ div.navigation a:hover{
     
 }
 
+.fullWidth{
+    width : 100%;
+    margin : 0 auto;
+}
+
+.leftClass{
+    float : left;
+}
+
+.rightClass{
+    float : right;
+}
+
 .footer {
-    width: 100%;
+    margin : 0 auto;
     height: 50px;
     background-color: black;
     color: white;
     
 }
+
+
+div.buttonUp {
+    padding: 15px;
+}
+div.scrolled {
+    border-radius: 25px;
+    background-color: black;
+    position: fixed;
+    bottom: 70;
+    right: 30;
+}
 div.footer ul {
     float: left;
-    padding: 10px;
+    margin: 10px;
+    margin-left: -25px;
     list-style-type: none;
     list-style: none;
     list-style-image: none;
@@ -63,6 +89,15 @@ div.footer li {
     padding: 0px 7px 0px 0px;
     display: inline;
 }
+.footer li:before { 
+    content:' | ';  
+    padding: 0px 7px 0px 0px;
+}
+.footer li:first-child:before { 
+    content:''; 
+}
+
+
 .center { 
     text-align: center; 
     width: 100% !important; 
@@ -86,3 +121,5 @@ div.footer li {
     height: 300px; 
     margin: 50px;
 }
+
+

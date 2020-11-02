@@ -7,12 +7,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+    <a name="top"></a>
     <header class="sticky-top">
 
-        <?php wp_nav_menu(array(
-            'theme_location' => 'top-menu',
-            'container_class' => 'navigation'
-        )); ?>
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="fullWidth">
+
+                <div class="leftClass">
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'top-left-menu',
+                        'container_class' => 'navigation'
+                    )); ?>
+                </div> <!-- end leftClass -->
+
+                <div class="rightClass">
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'top-right-menu',
+                        'container_class' => 'navigation'
+                    )); ?>
+                </div><!-- end rightClass -->
+                <div style="clear:both;"></div><!-- clear both left and right -->
+            </div><!-- end fullWidth -->
+
+        </nav><!-- .site-navigation -->
 
     </header>

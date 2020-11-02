@@ -3,7 +3,22 @@ $(function () {
     var $nav = $("header");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
+  $(window).scroll(function() {
+    var element = document.getElementById("buttonUp");
+    element.classList.remove("scrolled");
+    if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight-100) {
+      element.classList.add("scrolled");
+      }  
+      /*
+      console.log('Window height (px):', window.innerHeight)
+      console.log('Currently scrolled from top (px):', Math.ceil(window.pageYOffset))
+      console.log('Document height(px):', document.body.offsetHeight)   
+      */
+ });
+ 
 });
+
+
 
 var mymap = L.map('mapid').setView([49.030503, 17.338915], 15);
 

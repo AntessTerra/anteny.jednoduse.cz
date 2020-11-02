@@ -99,7 +99,8 @@ add_filter('nav_menu_item_id', 'menu_id_page', 10, 2);
  */
 register_nav_menus(
     array(
-        'top-menu' => __('Top Menu', 'theme'),
+        'top-left-menu' => __('Top Left Menu', 'theme'),
+        'top-right-menu' => __('Top Right Menu', 'theme'),
         'footer-menu' => __('Footer Menu', 'theme')
     )
 );

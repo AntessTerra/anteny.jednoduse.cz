@@ -1,1 +1,1 @@
-# anteny.snadno
+# anteny.jednoduse.cz

@@ -1,12 +1,12 @@
 $(function () {
   $(document).scroll(function () {
-    var $nav = $("header");
+    var $nav = $("nav");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
   $(window).scroll(function() {
     var element = document.getElementById("buttonUp");
     element.classList.remove("scrolled");
-    if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight-100) {
+    if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight-200) {
       element.classList.add("scrolled");
       }  
       /*

@@ -13,7 +13,7 @@ function load_stylesheets()
         'bootstrap',
         get_template_directory_uri() . '/css/bootstrap.min.css',
         array(),
-        false,
+        time(),
         'all'
     );
     wp_enqueue_style('bootstrap');
@@ -22,7 +22,7 @@ function load_stylesheets()
         'style',
         get_template_directory_uri() . '/style.css',
         array(),
-        false,
+        time(),
         'all'
     );
     wp_enqueue_style('style');
